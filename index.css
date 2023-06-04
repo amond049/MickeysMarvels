@@ -1,0 +1,308 @@
+/* Setting up the fonts that will be used on this webpage */
+@font-face{
+    font-family: "Lobster";
+    src: url("Fonts/Lobster-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Arvo-Bold";
+    src: url("Fonts/Arvo-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Arvo";
+    src: url("Fonts/Arvo-Regular.ttf");
+}
+
+hr.solid {
+    width: 90%;
+    margin: 0 auto;
+    border-top: 3px solid #FF8C00;
+}
+
+/* All of the navbar functionality */
+#navbar{
+    background-color: #FFFFFF;
+    width: 100%;
+    border-bottom: 1px solid #FF8C00;
+}
+
+#logo{
+    font-family: "Lobster";
+    color: #FF8C00;
+}
+
+li {
+    text-align: center;
+}
+
+.nav-link{
+    color: #FF8C00;
+    font-family: "Arvo-Bold";
+}
+
+#navbar-item{
+    margin-left: 125px;
+}
+
+
+/* All of the entrance section's CSS */
+#banner {
+    background-color: #FF8C00;
+    margin-top: 75px;
+    border-radius: 15px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+#banner-title{
+    color: white;
+    font-family: "Lobster";
+    font-size: 84px;
+    padding-top: 15px;
+}
+
+#banner-title-div {
+    display: inline;
+}
+
+#banner-background{
+    border-radius: 15px;;
+    display: inline;
+    width: 50%;
+    height: 300px;
+    background-image: linear-gradient(90.29deg, #FF8C00 0.22%, rgba(239, 173, 93, 0.570031) 51.07%, rgba(255, 140, 0, 0) 99.71%), url("Graphics/background-image.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+
+/* All of the services section CSS */
+#services-section, #meet-the-team-section, #reviews-section, #book-appointment-section{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#locations-section {
+    margin-top: 100px;
+}
+
+
+#services-section h1, #locations-section h1, #meet-the-team-section h1, #reviews-section h1, #book-appointment-section h1{
+    text-decoration: underline;
+    font-family: "Arvo-Bold";
+    color: #FF8C00;
+    font-size: 48px;
+}
+
+/* All of the styling pertaining to the services section of the website */
+#services-subtitle {
+    font-family: "Arvo";
+    font-size: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#service-card-computer-repair, #service-card-damage-control, #service-card-data-recovery, #service-card-unlock-sim {
+    background-color: #FF8C00;
+    border-radius: 15px;
+    height: 232px;
+    font-family: "Arvo-Bold";
+    color: white;
+    font-size: 28px;
+    padding-top: 25%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#service-card-phone-repair{
+    background-color: #FF8C00;
+    border-radius: 15px;
+    height: 232px;
+    font-family: "Arvo-Bold";
+    color: white;
+    font-size: 28px;
+    padding-top: 20%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* All of the styling pertaining to the locations section of the webpage */
+#locations-section {
+    font-family: "Arvo";
+    font-size: 18px;
+}
+
+#physical-address, #email-address, #hours-of-operation-header {
+    font-weight: bold;
+}
+
+#hours-of-operation{
+    background-color: #FF8C00;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    padding: 20px 0px;
+}
+
+/* All of the styling pertaining to the meet the team section of the webpage*/
+#employee-photo {
+    width: 600px;
+}
+
+#meet-the-team-carousel, #meet-the-team-description{
+    background-color: #FF8C00;
+    padding: 60px 25px;
+}
+
+#meet-the-team-carousel {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;;
+}
+
+#meet-the-team-description {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+
+
+#name {
+    font-family: "Arvo-Bold";
+    font-size: 26px;
+}
+
+#description {
+    font-family: "Arvo";
+    font-size: 18px;
+}
+
+#employee-photo {
+    border-radius: 15px;
+}
+
+/* All of the styling pertaining to the reviews section of the webpage */
+/* See if anything can be done about the scroll wheel styling */
+#reviews-section-content {
+    width: 100%;
+    height: 400px;
+    background-color:#FF8C00;
+    font-family: "Arvo";
+    border-radius: 15px;
+}
+
+#ratings-table-div{
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+#ratings-table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+}
+
+#comments{
+    border-bottom: 1px solid black;
+}
+
+/* All of the styling pertaining to the book an appointment section of the webpage */
+label {
+    font-family: "Arvo-Bold";
+    text-align: left;
+}
+
+input {
+    margin-bottom: 10px;
+}
+#fullNameLabel, #emailAddressLabel {
+    width: 70%;
+}
+
+#fullName, #emailAddress {
+    width: 70%;
+    height: 40px;
+    font-family: "Arvo";
+    font-size: 20px;
+}
+
+#serviceSelectionDiv, #specialistSelectionDiv, #dateSelectionDiv, #timeSelectionDiv {
+    display: inline-block;
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+#serviceLabel, #specialistLabel, #dateLabel, #timeLabel{
+    width: 100%;
+}
+
+#serviceDropdown, #specialistDropdown, #dateInput, #timeDropdown {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Arvo";
+}
+
+input[type=submit]{
+    font-family: "Arvo-Bold";
+    color: white;
+    background-color:#FF8C00;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 10px;
+}
+
+
+/* All of the styles pertaining to the pop up */
+#popup {
+    display: none;
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 475px;
+    top: -400px;
+    left: 44%;
+    margin-left: -100px;
+    margin-top: -100px;
+    z-index: 200;
+    border: 1px solid #FF8C00;
+    border-radius: 15px;
+    opacity: 1 !important;
+}
+
+#popup h1 {
+    font-size: 32px;
+    font-family: "Arvo-Bold";
+    color:#FF8C00;
+    text-align: center;
+}
+
+#popup p {
+    font-family: "Arvo";
+}
+#popupclose {
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+    color:#FF8C00;
+    font-family: "Arvo-Bold";
+}
+
+.popupcontent {
+    padding: 10px;
+}
+
+.test {
+    height: 100%;
+    overflow: hidden;
+}
