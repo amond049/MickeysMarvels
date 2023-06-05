@@ -12,7 +12,7 @@
 </head>
     <body>
         <!-- Get the code to make the navbar collapsible again! -->
-        <div class="container-fluid">
+        <div class="container-fluid sticky-top">
             <nav class="navbar navbar-expand navbar-light" id="navbar">
                 <a class="navbar-brand mx-5 my-auto" href="index.html" id="logo">Mickey's <br> Marvels</a>
                 <ul class="navbar-nav">
@@ -52,21 +52,122 @@
                 <div class="row g-5 justify-content-center">
                   <div class="col-3">
                     <div id="service-card-phone-repair">Phone Repair (iOS, Android & Windows)</div>
+                    <div id="service-card-phone-repair-description">
+                        <h1>Phone Repair (iOS, Android & Windows)</h1>
+                        <div id="description-text">
+                            <p>Is your phone giving you issues? The specialists team at Mickey's Marvels has you covered. <br> <br> Services include:
+                                <br>
+                                • <strong>Screen repair</strong>
+                                <br>
+                                • <strong>Factory reset</strong>
+                                <br>
+                                • <strong>Battery repair</strong>
+                                <br>
+                                • <strong>Camera repair</strong>
+                                <br>
+                                • <strong>Port repair</strong>
+                            </p>
+                        </div>
+                        <div id="price-duration-description">
+                            <p id="price-title"><strong>Price</strong></p>
+                            <p id="price-display">$34.99</p>
+                            <p id="duration-display"><strong>Duration: </strong>60 minutes</p>
+                        </div>
+                    </div>
                   </div>
                   <div class="col-3">
                     <div id="service-card-computer-repair">Computer <br> Repair</div>
+                    <div id="service-card-computer-repair-description">
+                        <h1>Computer Repair</h1>
+                        <div id="description-text">
+                            <p>Want to bring your computer back to pristine condition? Mickey's Marvels can do just that. <br><br> Services include:
+                                <br>
+                                • <strong>Motherboard replacement</strong>
+                                <br>
+                                • <strong>Network adapter repair</strong>
+                                <br>
+                                • <strong>Auxiliary device repair (printers, speakers, etc.)</strong>
+                                <br>
+                                • <strong>Laptop Repairs</strong>
+                            </p>
+                        </div>
+                        <div id="price-duration-description">
+                            <p id="price-title"><strong>Price</strong></p>
+                            <p id="price-display">$66.99</p>
+                            <p id="duration-display"><strong>Duration: </strong>60 minutes - 120 minutes</p>
+                        </div>
+                    </div>
                   </div>
                   <div class="col-3">
                     <div id="service-card-damage-control">Damage <br> Control</div>
+                    <div id="service-card-damage-control-description">
+                        <h1>Damage <br> Control</h1>
+                        <div id="description-text">
+                            <p>Clicked on the wrong link while browsing the internet? We can get your laptop back in your hands<br><br> Services include:
+                                <br>
+                                • <strong>Virus neutralization</strong>
+                                <br>
+                                • <strong>Ransomware decryption</strong>
+                                <br>
+                                • <strong>Crisis management </strong>
+                                <br>
+                                • <strong>FREE installation of antivirus software</strong>
+                            </p>
+                        </div>
+                        <div id="price-duration-description">
+                            <p id="price-title"><strong>Price</strong></p>
+                            <p id="price-display">$23.99</p>
+                            <p id="duration-display"><strong>Duration: </strong>24 - 48 hours</p>
+                        </div>
+                    </div>
                   </div>
                 </div>
                 <br>
                 <div class="row g-5 justify-content-center">
                     <div class="col-3">
                         <div id="service-card-data-recovery">Data <br> Recovery</div>
-                      </div>
+                        <div id="service-card-data-recovery-description">
+                            <h1>Data <br> Recovery</h1>
+                            <div id="description-text">
+                                <p>Accidentally had all of your data wiped? Fret not, we will try our best to get everything back<br><br> Services include:
+                                    <br>
+                                    • <strong>Logical data recovery</strong>
+                                    <br>
+                                    • <strong>Physical data recovery</strong>
+                                    <br>
+                                    • <strong>Data backup and restore </strong>
+                                    <br>
+                                    • <strong>Cloud virtualization</strong>
+                                </p>
+                            </div>
+                            <div id="price-duration-description">
+                                <p id="price-title"><strong>Price</strong></p>
+                                <p id="price-display">$105.98</p>
+                                <p id="duration-display"><strong>Duration: </strong>4 - 6 hours</p>
+                            </div>
+                        </div>
+                        </div>
                       <div class="col-3">
                         <div id="service-card-unlock-sim">Unlock SIM Card</div>
+                        <div id="service-card-unlock-sim-description">
+                            <h1>Data <br> Recovery</h1>
+                            <div id="description-text">
+                                <p>New phone but still want the same old number? Mickey's Marvels got you handled <br><br> Services include:
+                                    <br>
+                                    • <strong>Port forwarding</strong>
+                                    <br>
+                                    • <strong>Move SIM card from old phone to new phone</strong>
+                                    <br>
+                                    • <strong>SIM card set up and troubleshooting</strong>
+                                    <br>
+                                </p>
+                            </div>
+                            <div id="price-duration-description">
+                                <p id="price-title"><strong>Price</strong></p>
+                                <p id="price-display">$10.00</p>
+                                <p id="duration-display"><strong>Duration: </strong>10 - 15 minutes</p>
+                            </div>
+                        </div>
                       </div>
                 </div>
               </div>
@@ -143,9 +244,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3" id="meet-the-team-description" >
-                    <p id="name">Name</p>
-                    <p id="description">Description-1</p>
+                <div class="col-4" id="meet-the-team-description" >
+                    <p id="name">Steve</p>
+                    <p id="description">Steve is a hardworking individual who has been with us for over 4 years at this point. Specializing in every service we offer, he's been of great help
+                        ever since the first day he's joined. Described by customers as a great person to work with and always going the extra mile to ensure everyone is left
+                        satisfied by the end of the day</p>
                 </div>
             </div>
         </div>
@@ -163,72 +266,72 @@
                         <tbody>
                             <tr>
                                 <tr>
-                                    <td>Rating</td>
+                                    <td id="rating">5/5</td>
                                 </tr>
                                 <tr>
-                                    <td>Name</td>
+                                    <td id="rating-name">Haylie Gayathri</td>
                                 </tr>
                                 <tr>
                                     <td>&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td id="comments">Comments</td>
+                                    <td id="comments">I thought this place was great, they got my computer working again in no time. All for a reasonable price, I would highly recommend anyone who is having computer troubles to come by this place, they'll fix whatever issues you have with your computer!</td>
                                 </tr>
                             </tr>
                             <tr>
                                 <tr>
-                                    <td>Rating</td>
+                                    <td id="rating">3</td>
                                 </tr>
                                 <tr>
-                                    <td>Name</td>
+                                    <td id="rating-name">Vanessa Oluwatoyin</td>
                                 </tr>
                                 <tr>
                                     <td>&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td id="comments">Comments</td>
+                                    <td id="comments">I needed to get a new phone but I got my old phone from my provider, and I was afraid of getting a new phone because they might make me upgrade my plan, but I like my current plan. Mickey's Marvels did a great job at unlocking it and easing my concerns. Unfortunately, the SIM card began giving me issues thereafter, but I appreciate the help from Mickey's Marvels nonetheless. </td>
                                 </tr>
                             </tr>
                             <tr>
                                 <tr>
-                                    <td>Rating</td>
+                                    <td id="rating">4.5</td>
                                 </tr>
                                 <tr>
-                                    <td>Name</td>
+                                    <td id="rating-name">Marcelo Manon</td>
                                 </tr>
                                 <tr>
                                     <td>&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td id="comments">Comments</td>
+                                    <td id="comments">I had a really bade case of ransomware from clicking on a shady link and Mickey's Marvels helped me fix it up without any judgement. I've learnt from the past but should I accidentally end up making a silly mistake, I'll definitely be coming back for help :) </td>
                                 </tr>
                             </tr>
                             <tr>
                                 <tr>
-                                    <td>Rating</td>
+                                    <td id="rating">4/5</td>
                                 </tr>
                                 <tr>
-                                    <td>Name</td>
+                                    <td id="rating-name">Aaron Rodgers</td>
                                 </tr>
                                 <tr>
                                     <td>&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td id="comments">Comments</td>
+                                    <td id="comments">I'm pretty clumsy so I end up dropping my phone quite often. Even with a screen protector and a case, it's still not enough to stop the damage from my constant dropping. Mickey's Marvels has helped me time and time again to replace the broken features at a much cheaper rate than other mobile repair stores. I guarantee that I will inevitably drop my phone again, and when that happens, I'll come running back to Mickey's Marvels to get it back together in no time.</td>
                                 </tr>
                             </tr>
                             <tr>
                                 <tr>
-                                    <td>Rating</td>
+                                    <td id="rating">4.5/5</td>
                                 </tr>
                                 <tr>
-                                    <td>Name</td>
+                                    <td id="rating-name">Frank Ntilikina</td>
                                 </tr>
                                 <tr>
                                     <td>&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td id="comments">Comments</td>
+                                    <td id="comments">I accidentally wiped all the photographs I had on my phone trying to free up some space. This was devestating as I have years of photos and cherished memories in that phone that wasn't backed up. Mickey's Marvels did a great job at getting all of my data back and reuniting me with my memories. Fingers crossed I won't have to come back, but should something happen again I'm immediately packing my car and will make my way to Mickey's Marvels.</td>
                                 </tr>
                             </tr>
                         </tbody>
@@ -247,7 +350,7 @@
                 <br>
                 <label for="emailAddress" id="emailAddressLabel">Email Address: </label>
                 <br>
-                <input type="text" id="emailAddress" name="emailAddress" required>
+                <input type="email" id="emailAddress" name="emailAddress" required>
                 <br>
                 <div id="serviceSelectionDiv">
                 <label for="serviceDropdown" id="serviceLabel">Choose your service: </label>
@@ -305,10 +408,14 @@
                     </select>
                 </div>
                 <br>
+                <div id="comments-div">
+                    <label for="comments" id="comments-label">Comments:</label>
+                    <br>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Please leave any specifications regarding your issue to make your repair process as smooth and quick as possible."></textarea>
+                </div>
+                <br>
                 <input type="submit" value="Submit">
             </form>
-        </div>
-        <div id="overlay">
         </div>
         <div id="popup">
             <div class="popupcontrols">
