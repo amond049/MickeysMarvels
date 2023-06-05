@@ -1,13 +1,4 @@
-// TODO: - add the actual text information for each service!
-//          - make sure to add the estimated times for each service! (PERSONA 2)
-
-// true will represent when the title page is showing, false will represent when the information side is showing
-let phoneRepairState = true;
-let computerRepairState = true;
-let damageControlState = true;
-let dataRecoveryState = true;
-let unlockSimState = true;
-
+// These are the text descriptions for each service
 var form = document.getElementById("booking-form");
 function handleForm(event) {
     const valueMap = new Map();
@@ -72,11 +63,25 @@ function handleForm(event) {
             //overlay.style.display = "none";
             popup.style.display = "none";
             document.body.classList.remove("test");
+            document.getElementById("fullName").disabled = false;
+            document.getElementById("emailAddress").disabled = false;
+            document.getElementById("serviceDropdown").disabled = false;
+            document.getElementById("specialistDropdown").disabled = false;
+            document.getElementById("dateInput").disabled = false;
+            document.getElementById("timeDropdown").disabled = false;
+            document.getElementById("comments").disabled = false;
             document.getElementById("booking-form").reset();
         };
 
         document.body.classList.add("test")
-        popup.style.opacity = "1.0";
+        // Need to disable the inputs
+        document.getElementById("fullName").disabled = true;
+        document.getElementById("emailAddress").disabled = true;
+        document.getElementById("serviceDropdown").disabled = true;
+        document.getElementById("specialistDropdown").disabled = true;
+        document.getElementById("dateInput").disabled = true;
+        document.getElementById("timeDropdown").disabled = true;
+        document.getElementById("comments").disabled = true;
         //overlay.style.display = "block";
         popup.style.display = "block";
 
@@ -104,57 +109,53 @@ form.addEventListener('submit', handleForm);
 
 // Adding the onclick listeners so that we can flip between each state
 document.getElementById("service-card-phone-repair").onclick = function(){
-    if (phoneRepairState) {
-        // This means we need to show the information
-        phoneRepairState = false;
-        document.getElementById("service-card-phone-repair").innerHTML = "This is still a work in progress";
-    } else {
-        document.getElementById("service-card-phone-repair").innerHTML = "Phone Repair (iOs, Android & Windows)"
-        phoneRepairState = true;
-    }
+    document.getElementById("service-card-phone-repair").style.display = "none";
+    document.getElementById("service-card-phone-repair-description").style.display = "block";
+}
+
+document.getElementById("service-card-phone-repair-description").onclick = function (){
+    document.getElementById("service-card-phone-repair").style.display = "block";
+    document.getElementById("service-card-phone-repair-description").style.display = "none";
 }
 
 document.getElementById("service-card-computer-repair").onclick = function(){
-    if (computerRepairState) {
-        // This means we need to show the information
-        computerRepairState = false;
-        document.getElementById("service-card-computer-repair").innerHTML = "This is still a work in progress";
-    } else {
-        document.getElementById("service-card-computer-repair").innerHTML = "Computer Repair"
-        computerRepairState = true;
-    }
+    document.getElementById("service-card-computer-repair").style.display = "none";
+    document.getElementById("service-card-computer-repair-description").style.display = "block";
+}
+
+document.getElementById("service-card-computer-repair-description").onclick = function (){
+    document.getElementById("service-card-computer-repair").style.display = "block";
+    document.getElementById("service-card-computer-repair-description").style.display = "none";
 }
 
 document.getElementById("service-card-damage-control").onclick = function(){
-    if (damageControlState) {
-        // This means we need to show the information
-        damageControlState = false;
-        document.getElementById("service-card-damage-control").innerHTML = "This is still a work in progress";
-    } else {
-        document.getElementById("service-card-damage-control").innerHTML = "Damage <br> Control"
-        damageControlState = true;
-    }
+    document.getElementById("service-card-damage-control").style.display = "none";
+    document.getElementById("service-card-damage-control-description").style.display = "block";
+}
+
+document.getElementById("service-card-damage-control-description").onclick = function (){
+    document.getElementById("service-card-damage-control").style.display = "block";
+    document.getElementById("service-card-damage-control-description").style.display = "none";
 }
 
 document.getElementById("service-card-data-recovery").onclick = function(){
-    if (dataRecoveryState) {
-        // This means we need to show the information
-        dataRecoveryState = false;
-        document.getElementById("service-card-data-recovery").innerHTML = "This is still a work in progress";
-    } else {
-        document.getElementById("service-card-data-recovery").innerHTML = "Data <br> Recovery"
-        dataRecoveryState = true;
-    }
+    document.getElementById("service-card-data-recovery").style.display = "none";
+    document.getElementById("service-card-data-recovery-description").style.display = "block";
+}
+
+document.getElementById("service-card-data-recovery-description").onclick = function (){
+    document.getElementById("service-card-data-recovery").style.display = "block";
+    document.getElementById("service-card-data-recovery-description").style.display = "none";
 }
 
 document.getElementById("service-card-unlock-sim").onclick = function(){
-    if (unlockSimState) {
-        // This means we need to show the information
-        unlockSimState = false;
-        document.getElementById("service-card-unlock-sim").innerHTML = "This is still a work in progress";
-    } else {
-        document.getElementById("service-card-unlock-sim").innerHTML = "Unlock SIM Card"
-        unlockSimState = true;
-    }
+    document.getElementById("service-card-unlock-sim").style.display = "none";
+    document.getElementById("service-card-unlock-sim-description").style.display = "block";
 }
+
+document.getElementById("service-card-unlock-sim-description").onclick = function (){
+    document.getElementById("service-card-unlock-sim").style.display = "block";
+    document.getElementById("service-card-unlock-sim-description").style.display = "none";
+}
+
 
