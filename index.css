@@ -128,6 +128,66 @@ li {
     padding-right: 16px;
 }
 
+#service-card-phone-repair-description, #service-card-computer-repair-description, #service-card-damage-control-description, #service-card-data-recovery-description, #service-card-unlock-sim-description {
+    display: none;
+    background-color: #FF8C00;
+    border-radius: 15px;
+}
+
+#service-card-phone-repair-description h1, #service-card-computer-repair-description h1, #service-card-damage-control-description h1, #service-card-data-recovery-description h1, #service-card-unlock-sim-description h1 {
+    color: white;
+    font-size: 28px;
+    padding: 15px;
+    font-family: "Arvo-Bold";
+    text-decoration: none;
+}
+
+#service-card-computer-repair-description h1, #service-card-damage-control-description h1, #service-card-data-recovery-description h1, #service-card-unlock-sim-description h1 {
+    padding-bottom: 50px;
+}
+
+#price-title {
+    font-size: 24px;
+}
+
+#description-text{
+    text-align: left;
+    padding: 10px;
+    font-family: "Arvo";
+    color: black;
+    border-radius: 30px;
+    border: 15px solid #FF8C00;
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#description-text p {
+    margin-bottom: 0;
+}
+
+#price-duration-description {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-family: "Arvo";
+    border-bottom: 10px solid #FF8C00;
+    border-radius: 15px;
+}
+
+#price-display {
+    font-size: 64px;
+    font-family: "Arvo";
+    color: white;
+}
+
+#duration-display {
+    font-size: 14px;
+}
+#price-duration-description p {
+    margin: 2px auto;
+}
+
 /* All of the styling pertaining to the locations section of the webpage */
 #locations-section {
     font-family: "Arvo";
@@ -144,6 +204,10 @@ li {
     color: white;
     border-radius: 15px;
     padding: 20px 0px;
+}
+
+#hours-of-operation-header {
+    font-size: 32px;
 }
 
 /* All of the styling pertaining to the meet the team section of the webpage*/
@@ -171,11 +235,14 @@ li {
 #name {
     font-family: "Arvo-Bold";
     font-size: 26px;
+    margin-bottom: 0;
 }
 
 #description {
     font-family: "Arvo";
     font-size: 18px;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 #employee-photo {
@@ -214,6 +281,17 @@ td {
 
 #comments{
     border-bottom: 1px solid black;
+    padding: 15px;
+}
+
+#rating{
+    font-weight: bold;
+    padding: 15px;
+}
+
+#rating-name{
+    font-style: italic;
+    padding: 15px;
 }
 
 /* All of the styling pertaining to the book an appointment section of the webpage */
@@ -225,6 +303,7 @@ label {
 input {
     margin-bottom: 10px;
 }
+
 #fullNameLabel, #emailAddressLabel {
     width: 70%;
 }
@@ -236,14 +315,19 @@ input {
     font-size: 20px;
 }
 
-#serviceSelectionDiv, #specialistSelectionDiv, #dateSelectionDiv, #timeSelectionDiv {
+#serviceSelectionDiv, #specialistSelectionDiv, #dateSelectionDiv, #timeSelectionDiv{
     display: inline-block;
     width: 35%;
     margin-bottom: 10px;
 }
 
-#serviceLabel, #specialistLabel, #dateLabel, #timeLabel{
+#serviceLabel, #specialistLabel, #dateLabel, #timeLabel, #comments-label{
     width: 100%;
+}
+
+#comments-div {
+    width: 70%;
+    margin: 0 auto;
 }
 
 #serviceDropdown, #specialistDropdown, #dateInput, #timeDropdown {
@@ -260,6 +344,15 @@ input[type=submit]{
     border: none;
     border-radius: 15px;
     padding: 15px 10px;
+}
+
+textarea{
+    resize: none;
+    font-family: "Arvo";
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+     box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 
