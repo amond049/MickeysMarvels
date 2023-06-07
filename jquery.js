@@ -62,3 +62,25 @@ $('#carouselExampleControls').on('slide.bs.carousel', function (e) {
             break;
     }
   })
+
+
+  $("#booking-form").on("submit", function(){
+    $("#confirmationModal").modal("show");
+
+    // Setting the appropriate values in the modal
+    var fullNameBuffer = $("#fullName").val();
+    var emailAddressBuffer = $("#emailAddress").val();
+    var serviceBuffer = $("#serviceDropdown").val();
+    var specialistBuffer = $("#specialistDropdown").val();
+    var dateBuffer = $("#dateInput").val();
+    var timeBuffer = $("#timeDropdown").val();
+
+    $("#modal-full-name").html("<strong>Full Name: </strong>" + fullNameBuffer);
+    $("#modal-email").html("<strong>Email Address: </strong>" + emailAddressBuffer);
+    $("#modal-service").html("<strong>Service: </strong>" + serviceBuffer);
+    $("#modal-specialist").html("<strong>Specialist: </strong>" + specialistBuffer);
+    $("#modal-date").html("<strong>Date: </strong>" + dateBuffer);
+    $("#modal-time").html("<strong>Time: </strong>" + timeBuffer);
+
+    $("#booking-form")[0].reset();
+  })
