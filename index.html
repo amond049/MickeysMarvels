@@ -18,19 +18,19 @@
                 <ul class="navbar-nav">
                     <li class="nav-item my-auto" id="navbar-item">
                         <!--Need to change the text links!-->
-                    <a class="nav-link" href="#services-section">Services</a>
+                    <a id="services-link" class="nav-link" href="#services-section">Services</a>
                     </li>
                     <li class="nav-item my-auto" id="navbar-item">
-                    <a class="nav-link" href="#locations-section">Locations</a>
+                    <a id="locations-link" class="nav-link" href="#locations-section">Locations</a>
                     </li>
                     <li class="nav-item my-auto" id="navbar-item">
-                    <a class="nav-link" href="#meet-the-team-section">Meet the Team</a>
+                    <a id="meet-the-team-link" class="nav-link" href="#meet-the-team-section">Meet the Team</a>
                     </li>
                     <li class="nav-item my-auto" id="navbar-item">
-                    <a class="nav-link" href="#reviews-section">Reviews</a>
+                    <a id="reviews-link" class="nav-link" href="#reviews-section">Reviews</a>
                     </li>
                     <li class="nav-item my-auto" id="navbar-item">
-                        <a class="nav-link" href="#book-appointment-section">Book an <br>Appointment</a>
+                        <a id = "book-appointment-link" class="nav-link" href="#book-appointment-section">Book an <br>Appointment</a>
                     </li>
                 </ul>
             </nav>
@@ -357,11 +357,11 @@
                 <br>
                     <select name="serviceDropdown" id="serviceDropdown" required>
                         <option value="" disabled selected>---</option>
-                        <option value="phone-repair">Phone Repair (iOS, Android & Windows)</option>
-                        <option value="computer-repair">Computer Repair</option>
-                        <option value="damage-control">Damage Control</option>
-                        <option value="data-recovery">Data Recovery</option>
-                        <option value="unlock-sim">Unlock SIM Card</option>
+                        <option value="Phone Repair (iOS, Android & Windows)">Phone Repair (iOS, Android & Windows)</option>
+                        <option value="Computer Repair">Computer Repair</option>
+                        <option value="Damage Control">Damage Control</option>
+                        <option value="Data Recovery">Data Recovery</option>
+                        <option value="Unlock SIM Card">Unlock SIM Card</option>
                     </select>
                 </div>
                 <div id="specialistSelectionDiv">
@@ -369,10 +369,10 @@
                     <br>
                     <select name="specialistDropdown" id="specialistDropdown" required>
                         <option value="" disabled selected>---</option>
-                        <option value="steve">Steve</option>
-                        <option value="catherine">Catherine</option>
-                        <option value="matt">Matt</option>
-                        <option value="kim">Kim</option>
+                        <option value="Steve">Steve</option>
+                        <option value="Catherine">Catherine</option>
+                        <option value="Matt">Matt</option>
+                        <option value="Kim">Kim</option>
                     </select>
                 </div>
                 <br>
@@ -387,24 +387,24 @@
                     <br>
                     <select name="timeDropdown" id="timeDropdown" required>
                         <option value="" disabled selected>---</option>
-                        <option value="8:30">8:30 AM</option>
-                        <option value="9:00">9:00 AM</option>
-                        <option value="9:30">9:30 AM</option>
-                        <option value="10:00">10:00 AM</option>
-                        <option value="10:30">10:30 AM</option>
-                        <option value="11:00">11:00 AM</option>
-                        <option value="11:30">11:30 AM</option>
-                        <option value="12:00">12:00 PM</option>
-                        <option value="12:30">12:30 PM</option>
-                        <option value="1:00">1:00 PM</option>
-                        <option value="1:30">1:30 PM</option>
-                        <option value="2:00">2:00 PM</option>
-                        <option value="2:30">2:30 PM</option>
-                        <option value="3:00">3:00 PM</option>
-                        <option value="3:30">3:30 PM</option>
-                        <option value="4:00">4:00 PM</option>
-                        <option value="4:30">4:30 PM</option>
-                        <option value="5:00">5:00 PM</option>
+                        <option value="8:30 AM">8:30 AM</option>
+                        <option value="9:00 AM">9:00 AM</option>
+                        <option value="9:30 AM">9:30 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="10:30 AM">10:30 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="11:30 AM">11:30 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="12:30 PM">12:30 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="1:30 PM">1:30 PM</option>
+                        <option value="2:00 PM">2:00 PM</option>
+                        <option value="2:30 PM">2:30 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="3:30 PM">3:30 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                        <option value="4:30 PM">4:30 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
                     </select>
                 </div>
                 <br>
@@ -417,25 +417,27 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
-        <div id="popup">
-            <div class="popupcontrols">
-                <span id="popupclose">X</span>
-            </div>
-            <div class="popupcontent">
-                <h1>Congratulations: </h1>
-                <br>
-                <p>You've successfully booked your appointment, you can find a summary of your appointment below: </p>
-                <div id="summary">
-                    <p id="nameSummary"></p>
-                    <p id="emailSummary"><strong>Email: </strong></p>
-                    <p id="serviceSummary"><strong>Service: </strong></p>
-                    <p id="specialistSummary"><strong>Specialist: </strong></p>
-                    <p id="dateSummary"><strong>Date: </strong></p>
-                    <p id="timeSummary"><strong>Time: </strong></p>
-                    <p>Feel free to close this pop-up to book another appointment with us! </p>
+        <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button id="pop-up-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
+                <div class="modal-body">
+                    <h1 id="modal-h1">Congratulations</h1>
+                    <p id="modal-description">You've succesfully booked your appointment, you can find a summary of your appointment below: </p>
+                    <p id="modal-full-name"></p>
+                    <p id="modal-email"></p>
+                    <p id="modal-service"></p>
+                    <p id="modal-specialist"></p>
+                    <p id="modal-date"></p>
+                    <p id="modal-time"></p>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
         <br>
         <br>
         <br>
