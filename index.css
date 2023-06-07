@@ -357,45 +357,37 @@ textarea{
 
 
 /* All of the styles pertaining to the pop up */
-#popup {
-    display: none;
-    position: relative;
-    background-color: white;
-    width: 400px;
-    height: 475px;
-    top: -400px;
-    left: 44%;
-    margin-left: -100px;
-    margin-top: -100px;
-    z-index: 200;
-    border: 1px solid #FF8C00;
-    border-radius: 15px;
-    opacity: 1 !important;
-}
-
-#popup h1 {
-    font-size: 32px;
-    font-family: "Arvo-Bold";
-    color:#FF8C00;
-    text-align: center;
-}
-
-#popup p {
+#confirmationModal p{
     font-family: "Arvo";
 }
-#popupclose {
-    float: right;
-    padding: 10px;
-    cursor: pointer;
-    color:#FF8C00;
+
+#pop-up-close {
     font-family: "Arvo-Bold";
+    color: #FF8C00;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
 }
 
-.popupcontent {
-    padding: 10px;
+
+#modal-h1 {
+    text-align: center;
+    font-family: "Arvo-Bold";
+    color:#FF8C00;
+    font-size: 24px;
 }
 
-.test {
-    height: 100%;
-    overflow: hidden;
+#modal-description{
+    text-align: center;
+    font-family: "Arvo";
+}
+
+#ok-button-modal {
+    background-color: #FF8C00;
+    border-radius: 15px;
+    padding: 10px 40px;
+    border: none;
+    margin: 0 auto;
 }
